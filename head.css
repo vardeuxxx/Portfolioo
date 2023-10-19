@@ -1,0 +1,64 @@
+/*HEAD SECTION*/
+/*HEAD SECTION*/
+/*HEAD SECTION*/
+#head {	/*#head for unique id*/
+	background-image: url(img/bg2.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1; /* Z-index for layering elements/ layering elements z position*/
+	
+}
+/*h1 color glowing effect*/
+@keyframes glow {
+	0% {
+	  text-shadow: 0 0 5px white, 0 0 10px red, 0 0 15px crimson; /* Initial text-shadow for the glowing effect */
+	}
+	50% {
+	  text-shadow: 0 0 20px white, 0 0 25px red, 0 0 30px crimson; /* Enhanced text-shadow for mid-animation glow */
+	}
+	100% {
+	  text-shadow: 0 0 5px white, 0 0 10px red, 0 0 15px red; /* Return to the initial text-shadow for a cycle */
+	}
+  }
+  
+#head h1 {
+	display: block;
+	width: fit-content;
+	font-size: 5rem;
+	position: relative;
+	color: white; /* Text color */
+	animation: glow 3s infinite; /* Apply the glowing effect to the text, lasting 3 seconds and repeating infinitely */
+}
+/*h1 color glowing effect*/
+
+#head .cta { /*portfolio effects*/
+	display: inline-block;
+	padding: 10px 30px;
+	color: crimson;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease background-color; /* Add a smooth transition effect for background-color change */
+	transition-property: background color, color;
+}
+  
+#head .cta:hover {
+	color: white; /* Change text color on hover */
+	background-color: crimson; /* Change background color on hover */
+}
+
+#head .head {
+	max-width: 1200px; /*max width of the .head element to 1200 pixels */
+	margin: 0 auto; /* Center the element horizontally using auto margins */
+	padding: 0 50px; /* Apply padding to the left and right of the element */
+	justify-content: flex-start; /* Set the justification to flex-start (used in flexbox layouts)*/
+  }
+/*END OF HEAD SECTION*/
+/*END OF HEAD SECTION*/
+/*END OF HEAD SECTION*/
+
+

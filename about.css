@@ -1,0 +1,54 @@
+/*ABOUT SECTION*/
+#about .about {
+	flex-direction: column-reverse; /* Set the flex container's direction to column, reversing the order of its flex items for smaller devices */
+	text-align: center; /* Center-align text within the element */
+	max-width: 1200px; /* Set the maximum width for the container */
+	margin: 0 auto; /* Center the container horizontally on the page */
+	padding: 100px 20px; /* Add padding to the top and bottom (100px) and left and right (20px) of the element */
+  }
+
+/*h2 font size and weight*/
+#about .col-right h2{
+	font-size: 3rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+/*paragraph bottom margin*/
+#about .col-right p{
+	margin-bottom: 50px;
+}
+/*boarder of the image*/
+#about .about-img{
+	box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+	rgb(31, 193, 27) 0px 0px 0px 6px,
+	rgb(255, 217, 19) 0px 0px 0px 9px,
+	rgb(255, 156, 85) 0px 0px 0px 12px,
+	rgb(255, 85, 85) 0px 0px 0px 15px;
+	
+}
+@media (max-width: 768px) {
+	#about .col-left {
+	  width: 100%;
+	  height: auto; /* Remove fixed height for responsiveness */
+	}
+  
+	#about .col-right {
+	  width: 100%;
+	}
+  
+	#about .col-right h2 {
+	  font-size: 1.5rem; /* Adjust font size for smaller screens */
+	}
+  
+	#about .col-right p {
+	  margin-bottom: 10px; /* Adjust margin for smaller screens */
+	}
+  
+	#about .about {
+	  padding: 50px 20px; /* Reduce padding for smaller screens */
+	}
+  }
+/*END OF ABOUT SECTION*/
+/*END OF ABOUT SECTION*/
+/*END OF ABOUT SECTION*/

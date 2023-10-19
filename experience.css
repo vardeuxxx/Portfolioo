@@ -1,0 +1,57 @@
+/* EXPERIENCE SECTION */
+#experiences .exp{ /*making it center fix*/
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#experiences .exp-header h1{
+	margin-bottom: 20px; /*margin for h1*/
+}
+/*fix exp-item direction */
+#experiences .exp-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+/*fix flex direction */
+#experiences .exp-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%; /* Set the height to 100% of its parent container */
+	flex-direction: column; /* Set the flex direction to column to stack items vertically */
+	color: crimson; /* Set the text color to crimson */
+}
+
+/*exp header1 font size/weight*/
+#experiences .exp-info h1{
+	font-size: 5rem;
+	font-weight: 500;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+	#experiences .projects {
+	  padding: 50px 0; /* Reduce top and bottom padding */
+	}
+  
+	#experiences .projects-header h1 {
+	  margin-bottom: 10px; /* Reduce margin for h1 */
+	}
+  
+	#experiences .projects-item {
+	  width: 90%; /* Make the item wider for smaller screens */
+	}
+  
+	#experiences .projects-info h1 {
+	  font-size: 3rem; /* Reduce font size for smaller screens */
+	}
+  }
+
+/* END OF EXPERIENCE SECTION */

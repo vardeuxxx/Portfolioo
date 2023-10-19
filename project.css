@@ -1,0 +1,163 @@
+
+/* PROJECT SETION*/
+/* PROJECT SETION*/
+/* PROJECT SETION*/
+/*Center resposive card*/
+.Centered-text {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+  
+.Centered-text p {
+	margin: 0 auto; /* Horizontally center the paragraph */
+	max-width: 600px; /* Adjust the maximum width as needed */
+	margin-bottom: 20px;
+	margin-top: 20px;
+  }
+
+/*fit margin and width*/
+.container{
+	width: 1280px;
+	margin: 20px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+/*start of glowing effect of the box*/
+.container .box{
+	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+	rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2)
+	15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+	rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.container .box:hover{
+	box-shadow: 0 0 5px cyan,
+	0 0 25px cyan, 0 0 50px cyan,
+	0 0 100px cyan, 0 0 200px cyan;
+}
+/*end of glowing effect of the box*/
+
+/*start ng  box sizes */
+.container .box{
+	position: relative;
+	width: 400px;
+	height: 300px;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-bottom: 200px; /*300px*/
+}
+
+/*para di mag overflow yung pics*/
+/*sobrang sexy fit na fit*/
+.container .box .imgBox{
+	position: relative;
+	overflow: hidden;
+}
+
+/*para maging center yung pictures*/
+/*at di lumagpas inclue transformation 2s*/
+.container .box .imgBox img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 2s;
+}
+
+
+/*Forda animation ang person*/
+/*picture animation/transition*/
+.container .box:hover .imgBox img{
+	transform: scale(1.2);
+}
+
+/*letters part */
+.container .box .Text{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background:#e7f5ff;
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+
+/*start of box hover effect */
+.container .box:hover .Text{
+	transform: scaleY(1);
+}
+
+/*allignments of the text */
+.container .box .Text .Context{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+
+/*font style ni h2 and padding margin*/
+.container .box .Text .Context h2{
+	font-style: inherit;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color:black;
+	text-align: center;
+}
+
+
+/*font style ni h3 and padding margin*/
+.container .box .Text .Context h3{
+	margin: 10px 0 0;
+	padding: 0;
+	color: #fa5252;
+	text-align: center;
+	font-style: normal;
+}
+
+
+/*Media query for responsiveness*/
+@media screen and (max-width: 1290px) {
+	.container {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.container .box {
+		display: block;
+	}
+}
+
+/*responsive button */
+.responsive-button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+	.responsive-button {
+	  padding: 8px 16px;
+	  font-size: 14px;
+	}
+  }
+
+/*END OF PROJECT SETION*/
+/*END OF PROJECT SETION*/
+/*END OF PROJECT SETION*/
+
+
+
+
+
+
+

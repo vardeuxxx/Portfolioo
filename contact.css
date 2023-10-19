@@ -1,0 +1,80 @@
+/*CONTACT SECTION*/
+
+/* Styles for elements within the #contact container */
+#contact .contact {
+	flex-direction: column; 
+	max-width: 1200px; 
+	margin: 0 auto; 
+	width: 90%; 
+}
+  
+/* with of the contact items */
+#contact .contact-items {
+	width: 100%; 
+}
+#contact .contact-item {
+	text-align: center; /* Center the text within the element */
+	padding: 30px; /* Additional padding */
+	margin: 30px; /* Create space around the elements */
+	display: flex; /* Use flexbox layout */
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Center content vertically */
+	flex-direction: column; /* Set the flex direction to column */
+	/* Add box shadow to create a visual effect */
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+} 
+  /* Styles for elements with the class .icon */
+#contact .icon {
+	width: 70px; /* Set the width of the icons */
+	margin: 0 auto; /* Center the icons horizontally */
+	margin-bottom: 10px; /* Add space below the icons */
+}
+  
+  /* Styles for elements within .contact-info */
+#contact .contact-info h1 {
+	font-size: 2.5rem; /* Set the font size */
+	font-weight: 500; /* Set the font weight */
+	margin-bottom: 5px; /* Add space below the element */
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem; /* Set the font size */
+	line-height: 2rem; /* Set the line height */
+	font-weight: 500; /* Set the font weight */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+	#contact .contact {
+	  width: 100%; /* Expand to full width for smaller screens */
+	}
+  
+	#contact .contact-item {
+	  width: 90%; /* Make the item wider for smaller screens */
+	}
+  
+	#contact .contact-info h1 {
+	  font-size: 2rem; /* Reduce font size for smaller screens */
+	}
+  
+	#contact .contact-info h2 {
+	  font-size: 1.2rem; /* Reduce font size for smaller screens */
+	}
+  }
+/*END OF CONTACT SECTION*/
+/*END OF CONTACT SECTION*/
+/*END OF CONTACT SECTION*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@800&family=IBM+Plex+Serif:wght@500&family=Roboto+Condensed:wght@700&display=swap');
+/*removed all box gap**/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
+}
+
+/*archor in portfolio html*/
+a{
+	text-decoration: none;
+}
+/*background wallpaper img*/
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(img/bg.avif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: lavender;
+}
+/*head container*/
+.container{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+/*inserting paragraph will be automatically in this color*/
+p{
+	color: black;
+	font-size: 2rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
+}
+
+.section-title{
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+	animation: glow 3s infinite; /* Apply the glowing effect to the title */
+}
+
+
+
+img {
+	max-width: 100%; /* Ensure the image never exceeds its parent container's width */
+	height: auto; /* Allow the image's height to adjust proportionally */
+  
+	/* Center the image horizontally within its container */
+	display: block;
+	margin: 0 auto;
+  
+	/* Maintain aspect ratio without cropping (object-fit: cover) */
+	object-fit: cover;
+  
+	/* Optional: Add maximum width or height to limit scaling on very large screens */
+	max-height: 100%; /* Set a maximum height, adjust as needed */
+	max-width: 100%; /* Set a maximum width, adjust as needed */
+}
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+/*displaying ul flex*/
+ul {
+	margin: 20px;
+	padding: 30px;
+	display: flex;
+}
+ /*margins left to right*/ 
+ul li {
+	list-style: none;
+	margin: 0 20px;
+	transition: 0.5s;
+	position: relative;
+}
+/*color of anchor padding and setting to index 1 readable*/
+ul li a {
+	display: block;
+	padding: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color:#ffc9c9;
+	transition: 0.5s;
+	position: relative;
+	z-index: 1; 
+}
+/*hover effect of the anchor*/
+/*one of them not blur/ the rest will blur*/
+  ul:hover li a {
+	transform: scale(1.5);
+	opacity: 0.2;
+	filter: blur(3px);
+  }
+/*hover effect of the anchor*/
+ul li a:hover {
+	transform: scale(1);
+	opacity: 1;
+	filter: blur(0);
+  }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+	ul {
+	  flex-direction: column;
+	  margin: 10px;
+	  padding: 20px;
+	}
+  
+	ul li {
+	  margin: 10px 0;
+	}
+  }
